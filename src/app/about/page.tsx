@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const milestones = [
-  { year: "2005", event: "Founded by 50 educators and community leaders in Bengaluru" },
+  { year: "2005", event: "Founded by 50 educators and community leaders in Hosapete" },
   { year: "2006", event: "Vikas School started in Sindhanur, Raichur District" },
   // { year: "2008", event: "Launched vocational training center in Rajajinagar" },
   // { year: "2010", event: "Membership crossed 500; opened second branch in Tumkur" },
