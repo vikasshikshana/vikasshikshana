@@ -2,15 +2,16 @@ import Link from "next/link";
 
 const milestones = [
   { year: "2005", event: "Founded by 50 educators and community leaders in Bengaluru" },
-  { year: "2006", event: "First Annual General Body Meeting held; first scholarship batch of 12 students" },
-  { year: "2008", event: "Launched vocational training center in Rajajinagar" },
-  { year: "2010", event: "Membership crossed 500; opened second branch in Tumkur" },
-  { year: "2013", event: "Digital literacy center inaugurated with 30 computers" },
-  { year: "2015", event: "Celebrated 10 years; 1,000+ members; 200+ scholarships awarded" },
-  { year: "2018", event: "MOU signed with Karnataka Vocational Training Academy" },
-  { year: "2020", event: "Launched online classes during COVID-19; distributed 2,000+ study kits" },
-  { year: "2022", event: "Membership crossed 2,000; expanded to 40 villages" },
-  { year: "2025", event: "Celebrating 20 years with 2,500+ members and ₹12 crore in assets" },
+  { year: "2006", event: "Vikas School started in Sindhanur, Raichur District" },
+  // { year: "2008", event: "Launched vocational training center in Rajajinagar" },
+  // { year: "2010", event: "Membership crossed 500; opened second branch in Tumkur" },
+  // { year: "2013", event: "Digital literacy center inaugurated with 30 computers" },
+  // { year: "2015", event: "Celebrated 10 years; 1,000+ members; 200+ scholarships awarded" },
+  // { year: "2018", event: "MOU signed with Karnataka Vocational Training Academy" },
+  // { year: "2020", event: "Launched online classes during COVID-19; distributed 2,000+ study kits" },
+    { year: "2020", event: "Outsourced Vikas School Sindhanur to IKUE School Sindhanur" },
+  { year: "2022", event: "Membership crossed 2,000" },
+  { year: "2025", event: "Celebrating 20 years with 2,500+ members" },
 ];
 
 const principles = [
@@ -32,7 +33,7 @@ export default function AboutPage() {
           <div className="text-amber-400 font-semibold text-sm uppercase tracking-wider mb-3">About Us</div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Story & Mission</h1>
           <p className="text-emerald-200 text-lg max-w-2xl">
-            Two decades of empowering Karnataka communities through cooperative education and solidarity.
+            Two decades of empowering people of Karnataka through education.
           </p>
         </div>
       </section>
@@ -45,7 +46,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-slate-800 mb-6">Who We Are</h2>
               <p className="text-slate-600 leading-relaxed mb-4">
                 Vikas Shikshana Souharda Sahakari Ni. was founded in January 2005 by a determined group
-                of educators, retired government officers, and working families in Bengaluru, Karnataka.
+                of educators in Hosapete, Karnataka.
                 Sharing the belief that education is the most powerful instrument of social transformation,
                 they came together under the Karnataka Souharda Sahakari Act, 1997, to create a truly
                 member-owned cooperative focused on educational upliftment.
@@ -57,15 +58,14 @@ export default function AboutPage() {
                 Cooperative Friendship. Together, we are dedicated to developing our communities through education and solidarity.
               </p>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Today, we serve 2,500+ members across 45 villages and urban wards in Bengaluru Urban,
-                Bengaluru Rural, and Tumkur districts — operating training centers, scholarship programs,
+                Today, we serve 2,500+ members across Vijayanagara and Raichur districts — operating training centers, scholarship programs,
                 digital literacy centers, and adult education initiatives that have transformed thousands of lives.
               </p>
               <div className="bg-emerald-50 rounded-xl p-6 border-l-4 border-emerald-600">
                 <h3 className="font-bold text-slate-800 mb-2">Legal Registration</h3>
                 <p className="text-sm text-slate-600">
                   Registered under the Karnataka Souharda Sahakari Act, 1997<br />
-                  <strong>Registration No.:</strong> KSF/SCR/2005/1234<br />
+                  <strong>Registration No.:</strong> VJN-0003<br />
                   <strong>Date of Registration:</strong> 15 January 2005<br />
                   <strong>Federal Body:</strong> Karnataka State Souharda Federal Cooperative Ltd.
                 </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
               <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-bold text-slate-800 mb-3">Operational Area</h3>
                 <p className="text-slate-600 text-sm">
-                  Bengaluru Urban District, Bengaluru Rural District, and Tumkur District, Karnataka
+                  Vijayanagara District and  Raichur District, Karnataka
                 </p>
               </div>
             </div>
@@ -181,31 +181,31 @@ export default function AboutPage() {
       </section>
 
       {/* Awards */}
-      <section className="py-12 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-2">Recognition</div>
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800">Awards & Achievements</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { year: "2024", award: "Best Educational Cooperative", org: "Karnataka State Souharda Federal Cooperative Ltd." },
-              { year: "2022", award: "Excellence in Digital Literacy", org: "Pradhan Mantri Gramin Digital Saksharta Abhiyan" },
-              { year: "2020", award: "Outstanding Community Service (COVID-19 Relief)", org: "Bruhat Bengaluru Mahanagara Palike" },
-              { year: "2018", award: "Best Vocational Training Partner", org: "Karnataka Vocational Training Academy" },
-              { year: "2016", award: "Cooperative of the Year – Education Sector", org: "National Cooperative Union of India" },
-              { year: "2010", award: "Best New Cooperative", org: "Karnataka State Souharda Federal Cooperative Ltd." },
-            ].map((a) => (
-              <div key={a.award} className="text-center p-6 bg-amber-50 rounded-xl border border-amber-100">
-                <div className="text-3xl mb-2">🏆</div>
-                <div className="text-slate-800 font-bold mb-1">{a.award}</div>
-                <div className="text-xs text-emerald-600 font-medium mb-1">{a.year}</div>
-                <div className="text-slate-500 text-xs">{a.org}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/*<section className="py-12 md:py-20 bg-white">*/}
+      {/*  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
+      {/*    <div className="text-center mb-12">*/}
+      {/*      <div className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-2">Recognition</div>*/}
+      {/*      <h2 className="text-2xl md:text-3xl font-bold text-slate-800">Awards & Achievements</h2>*/}
+      {/*    </div>*/}
+      {/*    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">*/}
+      {/*      {[*/}
+      {/*        { year: "2024", award: "Best Educational Cooperative", org: "Karnataka State Souharda Federal Cooperative Ltd." },*/}
+      {/*        { year: "2022", award: "Excellence in Digital Literacy", org: "Pradhan Mantri Gramin Digital Saksharta Abhiyan" },*/}
+      {/*        { year: "2020", award: "Outstanding Community Service (COVID-19 Relief)", org: "Bruhat Bengaluru Mahanagara Palike" },*/}
+      {/*        { year: "2018", award: "Best Vocational Training Partner", org: "Karnataka Vocational Training Academy" },*/}
+      {/*        { year: "2016", award: "Cooperative of the Year – Education Sector", org: "National Cooperative Union of India" },*/}
+      {/*        { year: "2010", award: "Best New Cooperative", org: "Karnataka State Souharda Federal Cooperative Ltd." },*/}
+      {/*      ].map((a) => (*/}
+      {/*        <div key={a.award} className="text-center p-6 bg-amber-50 rounded-xl border border-amber-100">*/}
+      {/*          <div className="text-3xl mb-2">🏆</div>*/}
+      {/*          <div className="text-slate-800 font-bold mb-1">{a.award}</div>*/}
+      {/*          <div className="text-xs text-emerald-600 font-medium mb-1">{a.year}</div>*/}
+      {/*          <div className="text-slate-500 text-xs">{a.org}</div>*/}
+      {/*        </div>*/}
+      {/*      ))}*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* CTA */}
       <section className="py-10 md:py-16 bg-amber-50 border-t border-amber-100">

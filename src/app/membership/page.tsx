@@ -5,7 +5,7 @@ const benefits = [
   { icon: "💼", title: "Subsidized Training", desc: "Access all vocational and skill development courses at heavily subsidized rates." },
   // { icon: "💻", title: "Free Digital Literacy", desc: "Free computer and digital literacy training for you and your family members." },
   // { icon: "📚", title: "Adult Education", desc: "Free functional literacy and financial literacy programs." },
-  { icon: "🏦", title: "Education Loan Facilitation", desc: "Expert guidance and facilitation for education loans through nationalized banks and government schemes." },
+  { icon: "🏦", title: "Education Loan Facilitation", desc: "Expert guidance and facilitation for education loans through cooperative banks and government schemes." },
   { icon: "🗳️", title: "Voting Rights", desc: "Participate in the Annual General Body Meeting and vote on all major decisions." },
   { icon: "💰", title: "Dividend on Shares", desc: "Annual dividend declared on your share capital investment." },
   // { icon: "🤝", title: "Welfare Fund", desc: "Access to Common Good Fund for emergency educational assistance." },
@@ -42,7 +42,7 @@ const faqs = [
   { q: "Can my family members also use the programs?", a: "Yes! As a regular member, your spouse, children, and dependent family members are eligible for scholarships, coaching programs, and many other benefits. Children of members can apply for merit and need-based scholarships." },
   { q: "How is my share capital kept safe?", a: "Your share capital is maintained in a separate statutory reserve fund as required by the Karnataka Souharda Sahakari Act, 1997. It is refundable upon resignation from membership (subject to bylaws)." },
   { q: "Can I withdraw my membership?", a: "Yes. You can submit a resignation letter to the Board. Upon acceptance, your share capital will be refunded (after deduction of any dues) within 90 days as per our bylaws." },
-  { q: "How often are dividends declared?", a: "Dividends are declared at the Annual General Body Meeting based on the financial performance of the cooperative for that year. In recent years, we have declared dividends ranging from 8% to 15%." },
+  { q: "How often are dividends declared?", a: "Dividends are declared at the Annual General Body Meeting based on the financial performance of the cooperative for that year." },
 ];
 
 export default function MembershipPage() {
@@ -182,7 +182,7 @@ export default function MembershipPage() {
                 <div className="mt-4 space-y-1 text-sm text-slate-600">
                   <div>📞 +91 88610 16415</div>
                   <div>📱 +91 88610 16415 (WhatsApp)</div>
-                  <div>✉ membership@vikasshikshana.org</div>
+                  <div>✉ vikasshikshana@gmail.com</div>
                   <div>🕐 Mon–Sat: 9:00 AM – 5:30 PM</div>
                 </div>
               </div>

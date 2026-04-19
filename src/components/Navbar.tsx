@@ -8,10 +8,10 @@ import TranslateWidget from "./TranslateWidget";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/programs", label: "Programs" },
+  // { href: "/programs", label: "Programs" },
   { href: "/membership", label: "Membership" },
   { href: "/governance", label: "Governance" },
-  { href: "/news", label: "News & Events" },
+  // { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -23,10 +23,10 @@ export default function Navbar() {
     <nav className="bg-emerald-900 text-white sticky top-0 z-50 shadow-md">
       {/* Top bar */}
       <div className="bg-emerald-950 text-xs py-1.5 px-4 flex justify-between items-center">
-        <span className="text-emerald-300 font-medium tracking-wide">ವಿಕಾಸ ಶಿಕ್ಷಣ ಸೌಹಾರ್ದ ಸಹಕಾರಿ ಸಂಘ</span>
+        <span className="text-emerald-300 font-medium tracking-wide">ವಿಕಾಸ ಶಿಕ್ಷಣ ಸೌಹಾರ್ದ ಸಹಕಾರಿ ನಿ.</span>
         <div className="hidden sm:flex gap-5 text-emerald-300">
-          <span>📞 +91 80 2345 6789</span>
-          <span>✉ info@vikasshikshana.org</span>
+          <span>📞 +91 8861016415</span>
+          <span>✉ vikasshikshana@gmail.com</span>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
             </div>
             <div>
               <div className="font-bold text-sm leading-tight">Vikas Shikshana</div>
-              <div className="text-xs text-emerald-300 leading-tight">Souharda Cooperative Society</div>
+              <div className="text-xs text-emerald-300 leading-tight">Souharda Sahakari Ni.</div>
             </div>
           </Link>
 

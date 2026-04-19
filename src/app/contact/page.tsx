@@ -4,40 +4,40 @@ import { useState } from "react";
 const offices = [
   {
     type: "Registered & Main Office",
-    address: "No. 45, 3rd Cross, Rajajinagar, Bengaluru – 560 010, Karnataka",
-    phone: "+91 80 2345 6789",
-    mobile: "+91 98765 43210",
-    email: "info@vikasshikshana.org",
+    address: "Ground Floor, JKS Complex, Anjaneya Temple, Main Bazar, Hosapete – 583 201, Karnataka",
+    phone: "+91 8861016415",
+    mobile: "+91 8861016415",
+    email: "vikasshikshana@gmail.com",
     hours: "Monday – Saturday: 9:00 AM – 5:30 PM",
-    closed: "2nd & 4th Sundays",
+    closed: "2nd & 4th Saturdays",
   },
-  {
-    type: "Tumkur Branch Office",
-    address: "No. 12, 1st Floor, Gandhi Nagar, Tumkur – 572 101, Karnataka",
-    phone: "+91 81 6789 0123",
-    mobile: "+91 94482 56789",
-    email: "tumkur@vikasshikshana.org",
-    hours: "Monday – Saturday: 9:30 AM – 5:00 PM",
-    closed: "Sundays and Public Holidays",
-  },
-  {
-    type: "Vocational Training Center",
-    address: "No. 2, 5th Cross, Malleshwaram, Bengaluru – 560 003, Karnataka",
-    phone: "+91 80 2346 7890",
-    mobile: "+91 97424 56789",
-    email: "training@vikasshikshana.org",
-    hours: "Monday – Saturday: 8:00 AM – 7:00 PM",
-    closed: "Sundays",
-  },
+  // {
+  //   type: "Tumkur Branch Office",
+  //   address: "No. 12, 1st Floor, Gandhi Nagar, Tumkur – 572 101, Karnataka",
+  //   phone: "+91 81 6789 0123",
+  //   mobile: "+91 94482 56789",
+  //   email: "tumkur@vikasshikshana.org",
+  //   hours: "Monday – Saturday: 9:30 AM – 5:00 PM",
+  //   closed: "Sundays and Public Holidays",
+  // },
+  // {
+  //   type: "Vocational Training Center",
+  //   address: "No. 2, 5th Cross, Malleshwaram, Bengaluru – 560 003, Karnataka",
+  //   phone: "+91 80 2346 7890",
+  //   mobile: "+91 97424 56789",
+  //   email: "training@vikasshikshana.org",
+  //   hours: "Monday – Saturday: 8:00 AM – 7:00 PM",
+  //   closed: "Sundays",
+  // },
 ];
 
 const contacts = [
-  { role: "President", name: "Sri Ramesh B. Naidu", mobile: "+91 98765 11111", email: "president@vikasshikshana.org" },
-  { role: "Secretary", name: "Sri Manjunath S. Gowda", mobile: "+91 98765 22222", email: "secretary@vikasshikshana.org" },
-  { role: "Membership Enquiries", name: "Membership Desk", mobile: "+91 98765 43210", email: "membership@vikasshikshana.org" },
-  { role: "Scholarship Enquiries", name: "Education Committee", mobile: "+91 98765 33333", email: "scholarships@vikasshikshana.org" },
-  { role: "Training Center", name: "Training Coordinator", mobile: "+91 97424 56789", email: "training@vikasshikshana.org" },
-  { role: "Grievance Redressal", name: "Welfare Committee", mobile: "+91 98765 44444", email: "grievance@vikasshikshana.org" },
+  { role: "CEO", name: "Smt. Shashikala HM", mobile: "+91 8861016415", email: "vikasshikshana@gmail.com" },
+  // { role: "Secretary", name: "Sri Manjunath S. Gowda", mobile: "+91 98765 22222", email: "secretary@vikasshikshana.org" },
+  // { role: "Membership Enquiries", name: "Membership Desk", mobile: "+91 8861016415", email: "vikasshikshana@gmail.com" },
+  // { role: "Scholarship Enquiries", name: "Education Committee", mobile: "+91 98765 33333", email: "scholarships@vikasshikshana.org" },
+  // { role: "Training Center", name: "Training Coordinator", mobile: "+91 97424 56789", email: "training@vikasshikshana.org" },
+  // { role: "Grievance Redressal", name: "Welfare Committee", mobile: "+91 98765 44444", email: "grievance@vikasshikshana.org" },
 ];
 
 export default function ContactPage() {
@@ -162,7 +162,7 @@ export default function ContactPage() {
                       <option>Membership Enquiry</option>
                       <option>Scholarship Application</option>
                       <option>Vocational Training Enrollment</option>
-                      <option>Digital Literacy Course</option>
+                      {/*<option>Digital Literacy Course</option>*/}
                       <option>Education Loan Assistance</option>
                       <option>Governance / Document Request</option>
                       <option>Grievance / Complaint</option>
@@ -245,15 +245,19 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map placeholder */}
+      {/* Map */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-emerald-50 rounded-2xl h-64 flex items-center justify-center border border-emerald-100">
-            <div className="text-center text-emerald-300">
-              <div className="text-4xl mb-2">📍</div>
-              <div className="font-medium text-emerald-700">Google Maps — Rajajinagar, Bengaluru</div>
-              <div className="text-sm text-emerald-300 mt-1">Map will be embedded here</div>
-            </div>
+          <div className="rounded-2xl h-96 overflow-hidden border border-emerald-100 shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.565!2d76.3775!3d15.2972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5f1234567890%3A0x0!2sJKS%20Complex%2C%20Anjaneya%20Temple%2C%20Main%20Bazar%2C%20Hosapete%20583201!5e0!3m2!1sen!2sin!4v1618000000000"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -267,7 +271,7 @@ export default function ContactPage() {
               <h3 className="font-bold text-lg mb-2 text-amber-400">WhatsApp</h3>
               <p className="text-slate-300 text-sm">
                 Send us a WhatsApp message at<br />
-                <a href="tel:+919876543210" className="text-white font-medium">+91 98765 43210</a><br />
+                <a href="tel:+919876543210" className="text-white font-medium">+91 8861016415</a><br />
                 for quick responses.
               </p>
             </div>
@@ -275,9 +279,9 @@ export default function ContactPage() {
               <div className="text-4xl mb-3">📧</div>
               <h3 className="font-bold text-lg mb-2 text-amber-400">Email</h3>
               <p className="text-slate-300 text-sm">
-                General: <a href="mailto:info@vikasshikshana.org" className="text-white">info@vikasshikshana.org</a><br />
-                Scholarships: <a href="mailto:scholarships@vikasshikshana.org" className="text-white text-xs">scholarships@vikasshikshana.org</a><br />
-                Training: <a href="mailto:training@vikasshikshana.org" className="text-white">training@vikasshikshana.org</a>
+                Email at: <a href="mailto:vikasshikshana@gmail.com" className="text-white">vikasshikshana@gmail.com</a><br />
+                {/*Scholarships: <a href="mailto:scholarships@vikasshikshana.org" className="text-white text-xs">scholarships@vikasshikshana.org</a><br />*/}
+                {/*Training: <a href="mailto:training@vikasshikshana.org" className="text-white">training@vikasshikshana.org</a>*/}
               </p>
             </div>
             <div>

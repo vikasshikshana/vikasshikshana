@@ -11,12 +11,13 @@
 14:"$Sreact.suspense"
 17:I[97367,["/_next/static/chunks/06cohj2d95nn8.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
 19:I[97367,["/_next/static/chunks/06cohj2d95nn8.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
-7:["$","li",null,{"children":"📍 No. 45, 3rd Cross, Rajajinagar, Bengaluru – 560 010"}]
-8:["$","li",null,{"children":"📞 +91 80 2345 6789"}]
-9:["$","li",null,{"children":"📱 +91 98765 43210"}]
-a:["$","li",null,{"children":"✉ info@vikasshikshana.org"}]
+7:["$","li",null,{"children":"📍 Ground Floor, JKS Complex, Anjaneya Temple, Main Bazar,
+Hosapete – 583 201"}]
+8:["$","li",null,{"children":"📞 +91 8861016415"}]
+9:["$","li",null,{"children":"📱 +91 8861016415"}]
+a:["$","li",null,{"children":"✉ vikasshikshana@gmail.com"}]
 b:["$","li",null,{"children":"🕐 Mon–Sat: 9:00 AM – 5:30 PM"}]
-c:["$","div",null,{"className":"border-t border-slate-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-slate-500","children":[["$","p",null,{"children":"© 2025 Vikas Shikshana Souharda Sahakari Ni.. All rights reserved."}],["$","p",null,{"children":"Registered under Karnataka Souharda Sahakari Act, 1997 | Reg. No. KSF/SCR/2005/1234"}]]}]
+c:["$","div",null,{"className":"border-t border-slate-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-slate-500","children":[["$","p",null,{"children":"© 2026 Vikas Shikshana Souharda Sahakari Ni.. All rights reserved."}],["$","p",null,{"children":"Registered under Karnataka Souharda Sahakari Act, 1997 | Reg. No. VJN-0003"}]]}]
 d:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 e:["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:f:0:1:0:props:children:1:props:children:props:children:1:props:children:props:notFound:0:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:f:0:1:0:props:children:1:props:children:props:children:1:props:children:props:notFound:0:1:props:children:props:children:1:props:style","children":404}],["$","div",null,{"style":"$0:f:0:1:0:props:children:1:props:children:props:children:1:props:children:props:notFound:0:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:f:0:1:0:props:children:1:props:children:props:children:1:props:children:props:notFound:0:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}]
 16:[]
