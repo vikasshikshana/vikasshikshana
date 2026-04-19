@@ -81,28 +81,29 @@ export default function TranslateWidget() {
     }
   };
 
-  return (
-    <>
-      {/* Hidden Google Translate mount point */}
-      <div id="google_translate_element" className="hidden" />
+   return (
+     <>
+       {/* Hidden Google Translate mount point */}
+       <div id="google_translate_element" className="hidden" />
 
-      {/* Toggle button */}
-      <button
-        onClick={handleToggle}
-        disabled={!ready}
-        title={isKannada ? "Switch to English" : "ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಿ"}
-        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all
-          ${
-            isKannada
-              ? "bg-amber-400 text-blue-900 border-amber-400 hover:bg-amber-300"
-              : "bg-transparent text-amber-300 border-amber-400/60 hover:bg-amber-400/10 hover:border-amber-400"
-          }
-          ${!ready ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
-        `}
-      >
-        <span className="text-sm">🌐</span>
-        <span>{isKannada ? "English" : "ಕನ್ನಡ"}</span>
-      </button>
-    </>
-  );
+       {/* Toggle button - prevented from translation */}
+       <button
+         onClick={handleToggle}
+         disabled={!ready}
+         title={isKannada ? "Switch to English" : "ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಿ"}
+         translate="no"
+         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all
+           ${
+             isKannada
+               ? "bg-amber-400 text-blue-900 border-amber-400 hover:bg-amber-300"
+               : "bg-transparent text-amber-300 border-amber-400/60 hover:bg-amber-400/10 hover:border-amber-400"
+           }
+           ${!ready ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
+         `}
+       >
+         <span className="text-sm">🌐</span>
+         <span>{isKannada ? "English" : "ಕನ್ನಡ"}</span>
+       </button>
+     </>
+   );
 }

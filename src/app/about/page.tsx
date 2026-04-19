@@ -10,8 +10,8 @@ const milestones = [
   // { year: "2018", event: "MOU signed with Karnataka Vocational Training Academy" },
   // { year: "2020", event: "Launched online classes during COVID-19; distributed 2,000+ study kits" },
     { year: "2020", event: "Outsourced Vikas School Sindhanur to IKUE School Sindhanur" },
-  { year: "2022", event: "Membership crossed 2,000" },
-  { year: "2025", event: "Celebrating 20 years with 2,500+ members" },
+  { year: "2022", event: "Membership crossed 200" },
+  { year: "2025", event: "Celebrating 20 years with 250+ members" },
 ];
 
 const principles = [

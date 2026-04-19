@@ -38,7 +38,7 @@ const docs = [
 ];
 
 const faqs = [
-  { q: "Who can become a member?", a: "Any individual aged 18 years and above who resides or works within our operational area (Bengaluru Urban, Bengaluru Rural, or Tumkur district) can apply for membership. There is no caste, religion, or gender restriction — membership is open to all." },
+  { q: "Who can become a member?", a: "Any individual aged 18 years and above who resides or works within our operational area (Vijayanagara or Raichur district) can apply for membership. There is no caste, religion, or gender restriction — membership is open to all." },
   { q: "Can my family members also use the programs?", a: "Yes! As a regular member, your spouse, children, and dependent family members are eligible for scholarships, coaching programs, and many other benefits. Children of members can apply for merit and need-based scholarships." },
   { q: "How is my share capital kept safe?", a: "Your share capital is maintained in a separate statutory reserve fund as required by the Karnataka Souharda Sahakari Act, 1997. It is refundable upon resignation from membership (subject to bylaws)." },
   { q: "Can I withdraw my membership?", a: "Yes. You can submit a resignation letter to the Board. Upon acceptance, your share capital will be refunded (after deduction of any dues) within 90 days as per our bylaws." },
