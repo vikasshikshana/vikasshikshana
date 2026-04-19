@@ -32,6 +32,7 @@ jobs:
           static_site_generator: next
 
       - run: npx next build
+      - run: ls -la
 
       - uses: actions/upload-pages-artifact@v3
         with:
