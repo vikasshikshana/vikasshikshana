@@ -1,23 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const boardMembers = [
   {
-    name: "Shri Vishwanath Hiremath",
+    name: "Shri Vishwanath C. Hiremath",
     role: "Chairman",
-    designation: "Cooperative Enthusiast & Social Worker",
+    designation: "Businessman",
     since: "Elected 2026",
-    bio: "A dedicated cooperative enthusiast working in cooperative field since 1997. He is recipient of Sahakari Ratna award by Karnataka Govt. Currently he is the chairman of our sister organisation Vikas Souharda Co-operative Bank Ltd., Hosapete.",
+    bio: "A committed businessman with a deep passion for the cooperative sector. Recipient of the \"Sahakara Ratna\" award from the Karnataka state government and the \"Bhargava\" award from local Indian musicians. Actively contributes to social work through Vikas Yuvaka Mandal.",
     // committees: ["Education & Scholarship Committee (Chair)", "Program & Events Committee"],
     initials: "VH",
+    photo: "/images/directors/vishwanath.png",
   },
   {
-    name: "Shri Vikas",
+    name: "Shri Vikas K.",
     role: "Vice Chairman",
-    designation: "Educator",
+    designation: "3D Visualizer",
     since: "Elected 2026",
-    bio: "A young and dynamic education enthusiast.",
+    bio: "A creative professional with a passion for painting. Actively involved in social work through Vikas Yuvaka Mandal.",
     // committees: ["Finance & Audit Committee (Chair)", "Member Welfare Committee"],
     initials: "VK",
+    photo: "/images/directors/vikas.jpeg",
   },
   {
     name: "Shri S. S. Hiremath",
@@ -29,31 +32,34 @@ const boardMembers = [
     initials: "SS",
   },
   {
-    name: "Shri Basavaraj S",
+    name: "Shri Basavaraj Sanna Jin",
     role: "Director",
-    // designation: "Chartered Accountant",
+    designation: "Businessman",
     since: "Elected 2026",
-    // bio: "A practicing Chartered Accountant with 20 years of experience in cooperative finance and audit. Shri Shetty ensures our financial management meets the highest standards of transparency and accountability.",
+    // bio: "",
     // committees: ["Finance & Audit Committee", "Building & Infrastructure Committee (Chair)"],
     initials: "BS",
+    photo: "/images/directors/basavaraj_s.jpeg",
   },
   {
     name: "Shri Anant Joshi",
     role: "Director",
-    // designation: "Agriculture Officer (Retd.)",
+    designation: "Journalist",
     since: "Elected 2026",
-    // bio: "A dedicated Kannada medium school headmistress committed to Kannada education and rural development. Smt. Padmavathi leads our adult literacy programs in rural talukas.",
+    bio: "A journalist with a passion for writing, collaboration, and media. Engages in social and health work through Vikas and Patanjali.",
     // committees: ["Education & Scholarship Committee", "Member Welfare Committee (Chair)"],
     initials: "AJ",
+    photo: "/images/directors/anant.png",
   },
   {
     name: "Shri Gangadhar Pattar",
     role: "Director",
-    designation: "Agriculture Officer (Retd.)",
+    designation: "Retired Agriculture Officer",
     since: "Elected 2026",
-    // bio: "A dedicated Kannada medium school headmistress committed to Kannada education and rural development. Smt. Padmavathi leads our adult literacy programs in rural talukas.",
+    bio: "A retired agriculture officer with wide-ranging interests in art, painting, reading, and social service.",
     // committees: ["Education & Scholarship Committee", "Member Welfare Committee (Chair)"],
     initials: "GP",
+    photo: "/images/directors/gangadhar.png",
   },
   {
     name: "Shri Basavaraj K",
@@ -65,13 +71,14 @@ const boardMembers = [
     initials: "BK",
   },
   {
-    name: "Smt. Madhu",
+    name: "Smt. Madhushri A.",
     role: "Director",
-    designation: "Social Worker & Women's Rights Activist",
-    since: "Elected 2020",
-    // bio: "A prominent social worker and women's rights activist who has worked in Bengaluru's slum communities for over 15 years. She leads our women's empowerment and self-help group programs.",
+    designation: "Physics Lecturer",
+    since: "Elected 2026",
+    bio: "A physics lecturer with a love for reading books. Actively involved in social work through Vikas Yuvaka Mandal.",
     // committees: ["Member Welfare Committee", "Education & Scholarship Committee"],
-    initials: "MM",
+    initials: "MA",
+    photo: "/images/directors/madhu.jpg",
   },
   {
     name: "Shri Shankarachari",
@@ -100,7 +107,7 @@ const boardMembers = [
     // committees: ["Education & Scholarship Committee", "Program & Events Committee"],
     initials: "RK",
   },
-      {
+  {
     name: "Shri Diwakar",
     role: "Distinguished Advisor",
     // designation: "Primary School Teacher",
@@ -224,19 +231,23 @@ export default function GovernancePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {boardMembers.map((m) => (
-              <div key={m.name} className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-emerald-900 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
-                    {m.initials}
+              <div key={m.name} className="bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow overflow-hidden flex flex-col items-center pt-7 pb-5 px-5">
+                {m.photo ? (
+                  <div className="w-32 h-32 rounded-2xl overflow-hidden border-4 border-emerald-100 shadow-md flex-shrink-0">
+                    <Image src={m.photo} alt={m.name} width={128} height={128} className="w-full h-full object-cover object-center" />
                   </div>
-                  <div>
-                    <h3 className="font-bold text-slate-800 leading-tight">{m.name}</h3>
-                    <div className="text-amber-600 text-xs font-semibold">{m.role}</div>
-                    <div className="text-slate-500 text-xs">{m.designation}</div>
-                    <div className="text-slate-400 text-xs">{m.since}</div>
+                ) : (
+                  <div className="w-32 h-32 rounded-2xl bg-emerald-900 flex items-center justify-center border-4 border-emerald-100 shadow-md flex-shrink-0">
+                    <span className="text-white font-bold text-3xl">{m.initials}</span>
                   </div>
+                )}
+                <div className="mt-4 text-center w-full">
+                  <h3 className="font-bold text-slate-800 leading-tight">{m.name}</h3>
+                  <div className="text-amber-600 text-xs font-semibold mt-0.5">{m.role}</div>
+                  <div className="text-slate-500 text-xs">{m.designation}</div>
+                  <div className="text-slate-400 text-xs">{m.since}</div>
+                  <p className="text-slate-600 text-xs leading-relaxed mt-3 text-left">{m.bio}</p>
                 </div>
-                <p className="text-slate-600 text-xs leading-relaxed mb-3">{m.bio}</p>
                 {/*<div>*/}
                 {/*  <div className="text-xs font-semibold text-slate-800 mb-1">Committee Roles:</div>*/}
                 {/*  {m.committees.map((c) => (*/}
