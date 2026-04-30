@@ -50,10 +50,38 @@ export default function ContactPage() {
     enquiryType: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "64cfd7c8-7f74-4aaf-acbe-a341276225a7",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject || formData.enquiryType,
+          enquiry_type: formData.enquiryType,
+          message: formData.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -192,10 +220,16 @@ export default function ContactPage() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-emerald-900 text-white py-3 rounded-lg font-semibold hover:bg-emerald-800 transition-colors"
+                    disabled={loading}
+                    className="w-full bg-emerald-900 text-white py-3 rounded-lg font-semibold hover:bg-emerald-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                   </button>
+                  {error && (
+                    <p className="text-xs text-red-600 text-center">
+                      Something went wrong. Please try again or call us directly.
+                    </p>
+                  )}
                   <p className="text-xs text-slate-500 text-center">
                     We respond within 2 working days. For urgent matters, please call directly.
                   </p>
