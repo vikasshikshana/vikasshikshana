@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Governance",
+  description:
+    "Meet the elected Board of Directors of Vikas Shikshana Souharda Sahakari Niyamitha. Learn how our cooperative is governed democratically by its members in Hosapete, Karnataka.",
+  alternates: { canonical: "https://vikasshikshana.in/governance" },
+};
 
 const boardMembers = [
   {

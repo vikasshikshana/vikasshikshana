@@ -1,4 +1,40 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Vikas Shikshana Souharda Sahakari Ni. | Hosapete, Karnataka",
+  description:
+    "Vikas Shikshana Souharda Sahakari Niyamitha — an education-focused cooperative society in Hosapete, Karnataka. Empowering communities through scholarships, skill development, and cooperative values since 2005.",
+  alternates: { canonical: "https://vikasshikshana.in" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Vikas Shikshana Souharda Sahakari Niyamitha",
+  alternateName: ["Vikas Shikshana", "vikasshikshana", "Vikas Shikshana Souharda Sahakari Ni."],
+  url: "https://vikasshikshana.in",
+  logo: "https://vikasshikshana.in/images/icon.png",
+  description:
+    "An education-focused cooperative society based in Hosapete, Karnataka, empowering communities through education, scholarships, and skill development since 2005.",
+  foundingDate: "2005",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Ground Floor, JKS Complex, Anjaneya Temple, Main Bazar",
+    addressLocality: "Hosapete",
+    addressRegion: "Karnataka",
+    postalCode: "583 201",
+    addressCountry: "IN",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91-8861016415",
+    contactType: "customer service",
+    availableLanguage: ["English", "Kannada"],
+  },
+  sameAs: ["https://github.com/vikasshikshana/vikasshikshana"],
+};
 
 const stats = [
 	{ value: "286+", label: "Active Members" },
@@ -110,6 +146,12 @@ const values = [
 
 export default function Home() {
 	return (
+		<>
+		<Script
+			id="org-jsonld"
+			type="application/ld+json"
+			dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+		/>
 		<div className="bg-stone-50">
 			{/* ── Hero ── */}
 			<section className="relative bg-gradient-to-br from-slate-800 via-emerald-900 to-teal-800 text-white overflow-hidden">
@@ -369,5 +411,6 @@ export default function Home() {
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

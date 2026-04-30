@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Membership",
+  description:
+    "Join Vikas Shikshana Souharda Sahakari Niyamitha as a member. Access scholarships, subsidized training, and be part of a cooperative community in Hosapete, Karnataka.",
+  alternates: { canonical: "https://vikasshikshana.in/membership" },
+};
 
 const benefits = [
   { icon: "🎓", title: "Scholarship Access", desc: "We will help in getting merit and need-based scholarships for SSLC, PUC, and higher education." },

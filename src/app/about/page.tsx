@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Vikas Shikshana Souharda Sahakari Niyamitha — our history, mission, and journey empowering communities in Hosapete, Karnataka since 2005.",
+  alternates: { canonical: "https://vikasshikshana.in/about" },
+};
 
 const milestones = [
   { year: "2005", event: "Founded by 50 educators and community leaders in Hosapete" },
