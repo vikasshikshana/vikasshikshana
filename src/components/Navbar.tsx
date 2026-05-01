@@ -50,59 +50,61 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop nav + translate */}
-          <div className="hidden md:flex items-center gap-0.5">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`px-3 py-2 rounded text-sm font-medium transition-colors ${
-                  pathname === link.href
-                    ? "bg-amber-500 text-white"
-                    : "text-emerald-100 hover:bg-emerald-800 hover:text-white"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="ml-2 pl-3 border-l border-emerald-700">
-              <TranslateWidget />
-            </div>
-          </div>
+           {/* Desktop nav + translate */}
+           <div className="hidden md:flex items-center gap-0.5">
+             {navLinks.map((link) => (
+               <Link
+                 key={link.href}
+                 href={link.href}
+                 className={`px-3 py-2 rounded text-sm font-medium transition-colors ${
+                   pathname === link.href
+                     ? "bg-amber-500 text-white"
+                     : "text-emerald-100 hover:bg-emerald-800 hover:text-white"
+                 }`}
+               >
+                 {link.label}
+               </Link>
+             ))}
+             <div className="ml-2 pl-3 border-l border-emerald-700">
+               <TranslateWidget />
+             </div>
+           </div>
 
-          {/* Mobile: translate + hamburger */}
-          <div className="md:hidden flex items-center gap-2">
-            <TranslateWidget />
-            <button
-              className="p-2 rounded text-emerald-200 hover:bg-emerald-800"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              <div className="w-5 h-0.5 bg-current mb-1"></div>
-              <div className="w-5 h-0.5 bg-current mb-1"></div>
-              <div className="w-5 h-0.5 bg-current"></div>
-            </button>
-          </div>
+           {/* Mobile: hamburger only (translate is in mobile dropdown) */}
+           <div className="md:hidden flex items-center gap-2">
+             <button
+               className="p-2 rounded text-emerald-200 hover:bg-emerald-800"
+               onClick={() => setIsOpen(!isOpen)}
+               aria-label="Toggle menu"
+             >
+               <div className="w-5 h-0.5 bg-current mb-1"></div>
+               <div className="w-5 h-0.5 bg-current mb-1"></div>
+               <div className="w-5 h-0.5 bg-current"></div>
+             </button>
+           </div>
 
         </div>
 
-        {/* Mobile dropdown */}
-        {isOpen && (
-          <div className="md:hidden pb-3 border-t border-emerald-800">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`block px-4 py-2 text-sm font-medium ${
-                  pathname === link.href ? "text-amber-400" : "text-emerald-100 hover:text-white"
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        )}
+         {/* Mobile dropdown */}
+         {isOpen && (
+           <div className="md:hidden pb-3 border-t border-emerald-800">
+             {navLinks.map((link) => (
+               <Link
+                 key={link.href}
+                 href={link.href}
+                 className={`block px-4 py-2 text-sm font-medium ${
+                   pathname === link.href ? "text-amber-400" : "text-emerald-100 hover:text-white"
+                 }`}
+                 onClick={() => setIsOpen(false)}
+               >
+                 {link.label}
+               </Link>
+             ))}
+             <div className="px-4 py-2 border-t border-emerald-800 mt-2">
+               <TranslateWidget />
+             </div>
+           </div>
+         )}
       </div>
     </nav>
   );

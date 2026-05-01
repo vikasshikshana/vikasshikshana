@@ -74,9 +74,10 @@ const boardMembers = [
     role: "Director",
     // designation: "",
     since: "Elected 2026",
-    // bio: "A retired Agriculture Officer representing our rural member base. Shri Patil has been instrumental in expanding our programs to agricultural communities and establishing our Tumkur branch.",
+    bio: "Public Relations Officer at RP Mines, former City Municipal Council member, and entrepreneur in the cooperative sector. Engaged in social work through Vikas Yuvaka Mandal. Interested in cooperative sector activities.",
     // committees: ["Program & Events Committee", "Building & Infrastructure Committee"],
     initials: "BK",
+    photo: "/images/directors/basavaraj_k.jpeg",
   },
   {
     name: "Smt. Madhushri A.",
@@ -86,7 +87,7 @@ const boardMembers = [
     bio: "A physics lecturer with a love for reading books. Actively involved in social work through Vikas Yuvaka Mandal.",
     // committees: ["Member Welfare Committee", "Education & Scholarship Committee"],
     initials: "MA",
-    photo: "/images/directors/madhu.jpg",
+    photo: "/images/directors/madhu.jpeg",
   },
   {
     name: "Shri Shankarachari",
